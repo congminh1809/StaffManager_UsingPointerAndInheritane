@@ -1,6 +1,8 @@
 ﻿// ThreeLuckyStaff_UsingPointerAndInheritane.cpp 
 #include <iostream>
+#include <cstring>
 #include <string>
+
 using namespace std;
 
 
@@ -236,6 +238,12 @@ NhanVienXeOmCongNghe::~NhanVienXeOmCongNghe()
 
 int main()
 {
+	NhanVienSuaOngNuoc *nv = new NhanVienSuaOngNuoc();
+	nv->Nhap();
+	nv->Xuat();
+	nv->Tinh_Tien_Luong();
+
+	delete nv;
 
 	system("pause");
 	return 0;
